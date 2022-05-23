@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Solar System</title>
+<style>
+	body {
+		margin: 0;
+		padding: 0;
+		background: #000;
+		background-size: cover;
+	}
+	#solarSystem {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 400px;
+		height: 400px;
+		transform: translate(-50%, -50%);
+		animation: animate 2s linear infinite;
+	}
+	#solarSystem span {
+		position: absolute;
+		border-radius: 50%;
+		//border: solid 1px #2a2a2a;
+		box-sizing: border-box;
+	}
+	#solarSystem span:nth-child(1) {
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		animation: xoay1 180s linear infinite;
+	}
+	#solarSystem span:nth-child(1):before {
+		content:'';
+		position: absolute;
+		left: -15px;
+		top: 50%;
+		width: 30px;
+		height: 30px;
+		border: none;
+		border-radius: 50%;
+		background: rgb(255, 154, 24);
+		box-shadow: 0 0 15px 5px rgba(245, 147, 49, 0.69);
+	}
+	#solarSystem span:nth-child(2) {
+		top: 50px;
+		left: 50px;
+		bottom: 50px;
+		right: 50px;
+		animation: xoay2 24s linear infinite;
+	}
+	#solarSystem span:nth-child(2):before {
+		content:'';
+		position: absolute;
+		left: -10px;
+		top: 50%;
+		width: 20px;
+		height: 20px;
+		border: none;
+		border-radius: 50%;
+		background: rgb(30, 179, 253);
+		box-shadow: 0 0 15px 5px rgba(49, 147, 245, 0.74);
+	}
+	#solarSystem span:nth-child(3) {
+		top: 90px;
+		left: 90px;
+		bottom: 90px;
+		right: 90px;
+		animation: xoay3 50s linear infinite;
+	}
+	#solarSystem span:nth-child(3):before {
+		content:'';
+		position: absolute;
+		left: -15px;
+		top: 50%;
+		width: 30px;
+		height: 30px;
+		border: none;
+		border-radius: 50%;
+		background: rgb(28, 224, 6);
+		box-shadow: 0 0 15px 5px rgba(133, 182, 102, 0.69);
+	}
+	#solarSystem span:nth-child(4) {
+		top: 140px;
+		left: 140px;
+		bottom: 140px;
+		right: 140px;
+		animation: xoay4 12s linear infinite;
+	}
+	#solarSystem span:nth-child(4):before {
+		content:'';
+		position: absolute;
+		left: -5px;
+		top: 50%;
+		width: 10px;
+		height: 10px;
+		border: none;
+		border-radius: 50%;
+		background: rgb(255, 238, 9);
+		box-shadow: 0 0 15px 5px rgb(255, 238, 9);
+	}
+	#solarSystem span:nth-child(5) {
+		top: 170px;
+		left: 170px;
+		bottom: 170px;
+		right: 170px;
+		background: rgb(255, 84, 0);
+		box-shadow: 0 0 90px 5px rgb(245, 118, 90), 0 0 30px 5px rgba(255, 167, 148, 0.69), 0 0 15px 5px rgba(245, 83, 49, 0.69);
+		border: none;
+	}
+	
+	@keyframes xoay1 {
+		0% 
+		{
+			transform: rotate(0deg);
+		}
+		100%
+		{
+			transform: rotate(-360deg);
+		}
+	}
+	@keyframes xoay2 {
+		0% 
+		{
+			transform: rotate(0deg);
+		}
+		100%
+		{
+			transform: rotate(360deg);
+		}
+	}
+	@keyframes xoay3 {
+		0% 
+		{
+			transform: rotate(0deg);
+		}
+		100%
+		{
+			transform: rotate(360deg);
+		}
+	}
+	@keyframes xoay4 {
+		0% 
+		{
+			transform: rotate(0deg);
+		}
+		100%
+		{
+			transform: rotate(360deg);
+		}
+	}
+</style>
+</head>
+<body>
+
+<div id="solarSystem">
+	<span></span>
+	<span></span>
+	<span></span>
+	<span></span>
+	<span></span>
+</div>
+
+</body>
+</html>
